@@ -103,7 +103,7 @@ param:
         # google site içi arama kutusu
         google: ~
         # google analytics takip numarası (ör. UA-1234567-8
-        googleanalyticsid: 
+        googleanalyticsid: UA-24681241-1 
         # sayfa yorumları için disqus site kaydı (ör. roktas)
         disqus: symtkn
         # GitHub şerit metni (ör. GitHub'dayım)
