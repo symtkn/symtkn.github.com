@@ -61,19 +61,19 @@ param:
         # dikkat!  unix kullanıcı adı github hesabından farklı olabilir
         user: symtkn
         # tam kullanıcı adı (ör. Recai Oktaş)
-        fullname: Tugba Devravut
+        fullname: Şeyma TEKİN
         # email adresi (ör. roktas@bil.omu.edu.tr)
-        email: tugba.devravut@bil.omu.edu.tr
+        email: seyma.tekin@bil.omu.edu.tr
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
         title: <a href="http://ondokuz.biz/">19</a> üyesi
         # GnuPG kısa parmak izi (ör. DEADBEEF)
         gpg: ~
         # twitter adresi (ör. http://19.status.net/roktas)
-        twitter: 
+        twitter: http://19.status.net/symtkn
         # flick adresi (ör. http://flickr.com/photos/roktas)
-        flickr: 
+        flickr: http://www.flickr.com/photos/60958446@N03/5964902824/in/photostream
         # facebook adresi (ör. http://facebook.com/roktas)
-        facebook: 
+        facebook: http://facebook.com/symtkn
         # özet akışı adresi (ör. http://feeds.feedburner.com/roktas)
         feed: ~
 
@@ -99,7 +99,7 @@ param:
         # ilişkili girdiler
         related: Diğer Girdiler
         # logo (ör. http://00010011.github.com/assets/19/19-normal-128x128.png)
-        logo: /chrome/19/19-normal-128x128.png
+        logo: /chrome/19/19-negative-128x128.png
         # google site içi arama kutusu
         google: ~
         # google analytics takip numarası (ör. UA-1234567-8
@@ -107,4 +107,4 @@ param:
         # sayfa yorumları için disqus site kaydı (ör. roktas)
         disqus: symtkn
         # GitHub şerit metni (ör. GitHub'dayım)
-        ribbon: GitHub'dayım
+        ribbon: Özgürce...
