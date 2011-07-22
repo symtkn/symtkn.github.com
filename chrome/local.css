@@ -8,8 +8,8 @@ layout: nil
  * =============================================================================
  */
 body {
-background-color: url('../chrome/resim.jpg');
-background-image:none
+background-color: none;
+background-image: url('../chrome/background/Original.jpg')
 
 }
 
