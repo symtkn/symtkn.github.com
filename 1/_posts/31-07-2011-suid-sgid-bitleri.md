@@ -20,7 +20,7 @@ Linux izin modelinde "suid" ve "sgid" isimli iki özel bit vardır.
 ###<a id="suid-bit"> Suid Biti </a>
 
 Eğer çalıştırılabilir bir dosyanın suid biti ayarlanmışsa o dosya o anda çalıştıran kullanıcı değilde ,asıl sahibi olan kuyllanıcının adıyla çalışıyormuş gibi olur.
-Örneğin: passwd çalıştırılabilir dosyasına baktığımızda;
+Örneğin: passwd çalıştırılabilir dosyasına baktığımızda;<br>
 
 <code> ls -l /usr/bin/passwd</code><br>
 <code>-rwsr-xr-x 1 root root 42824 2011-02-21 02:18 /usr/bin/passwd</code>
@@ -41,9 +41,9 @@ ls -l listelemesinde suid ve sgid bitleri "x" harfinin (yani çalıştırma/eri�
 Eğer hem "x" hemde suid/sgid bitleri aktifse listede "s" (küçük harf) olacaktır."x" biti aktif değilse "S" (büyük harf) olarak görülür.
 
 ###<a id="suid-sgid-degistirme"> Suid Ve Sgid Bitlerinin Değiştirilmesi </a>
-u : user
-g : group
-Yetki vermek için "+",yetkiyi kaldırmak içinde "-" işaretleri kullanılır.
+u : user<br>
+g : group<br>
+Yetki vermek için "+",yetkiyi kaldırmak içinde "-" işaretleri kullanılır. 
 
 <code>chmod u+s /usr/bin/program_adi</code> 
 
