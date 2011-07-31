@@ -19,7 +19,7 @@ Linux izin modelinde "suid" ve "sgid" isimli iki özel bit vardır.
 
 ###<a id="suid-bit"> Suid Biti </a>
 
-Eğer çalıştırılabilir bir dosyanın suid biti ayarlanmışsa o dosya o anda çalıştıran kullanıcı değilde ,asıl sahibi olan kuyllanıcının adıyla çalışıyormuş gibi olur.
+Eğer çalıştırılabilir bir dosyanın suid biti ayarlanmışsa o dosya o anda çalıştıran kullanıcı değilde ,asıl sahibi olan kullanıcının adıyla çalışıyormuş gibi olur.
 Örneğin: passwd çalıştırılabilir dosyasına baktığımızda;<br>
 <code> ls -l /usr/bin/passwd</code><br>
 <br>
@@ -27,7 +27,7 @@ Eğer çalıştırılabilir bir dosyanın suid biti ayarlanmışsa o dosya o and
 
 Burada dosya sahibinin izinlerini ifade eden üçlüde "x" yerine "s" var.
 Bu "s" harfi; suid ve çalıştırılabilirlik bitlerinin ayarlandığını belirtir.Böylece <u>passwd komutu</u> çalıştığında, o anda çalıştıran kullanıcı değilde root kullanıcısı tarafından  çalıştırılıyormuş gibi olacaktır.
-Ve passwd komutu root haklarıyla çalışınca, /etc/shadow dosyasınıda bir problem olmadan düzenleyebilecektir.Tabiki geçici olarak. =)
+Ve passwd komutu root haklarıyla çalışınca, /etc/shadow dosyasınıda bir problem olmadan düzenleyebilecektir.
 
 <b>EK BİLGİ:</b> 
 /etc/passwd 'de kullanıcı hesapları vardır.<br>
