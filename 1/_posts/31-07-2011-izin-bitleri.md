@@ -22,7 +22,8 @@ Linux izin modelinde "suid" ve "sgid" isimli iki özel bit vardır.
 Eğer çalıştırılabilir bir dosyanın suid biti ayarlanmışsa o dosya o anda çalıştıran kullanıcı değilde ,asıl sahibi olan kuyllanıcının adıyla çalışıyormuş gibi olur.
 Örneğin: passwd çalıştırılabilir dosyasına baktığımızda;<br>
 
-<code> ls -l /usr/bin/passwd</code><br><br>
+<code> ls -l /usr/bin/passwd</code><br>
+
 <code>-rwsr-xr-x 1 root root 42824 2011-02-21 02:18 /usr/bin/passwd</code>
 
 Burada dosya sahibinin izinlerini ifade eden üçlüde "x" yerine "s" var.
@@ -45,7 +46,7 @@ u : user<br>
 g : group<br>
 Yetki vermek için "+",yetkiyi kaldırmak içinde "-" işaretleri kullanılır. 
 
-<code>chmod u+s /usr/bin/program_adi</code> 
+<code>chmod u+s /usr/bin/program_adi</code><br>
 
 <code>chmod g-s /home/grup_adi</code>
 
