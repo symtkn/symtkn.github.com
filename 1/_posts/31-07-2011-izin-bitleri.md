@@ -43,8 +43,7 @@ Eğer hem "x" hemde suid/sgid bitleri aktifse listede "s" (küçük harf) olacak
 ###<a id="suid-sgid-degistirme"> Suid Ve Sgid Bitlerinin Değiştirilmesi </a>
 u : user
 g : group
-+ : yetki verme
-- : yetkiyi kaldırma
+Yetki vermek için "+",yetkiyi kaldırmak içinde "-" işaretleri kullanılır.
 
 <code>chmod u+s /usr/bin/program_adi</code> 
 
