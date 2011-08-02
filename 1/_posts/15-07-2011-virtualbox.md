@@ -21,7 +21,10 @@ title: VirtualBox İle OS Kurulumu
 Uygulamalar > Donatılar > VirtualBox OSE yolunu izleyerek sanal makinamızı açarız.Karşımıza aşağıda birinci resimdeki gibi bir arayüz çıkıcak.Bu ekranın, sol tarafında kurulu olan sanal OS'lerinizi görürsünüz.Şu an için boş çünkü şimdilik hiç bir işletim sistemi kurulu değil.Artık makinamızı çalıştırmaya başlıyalım.
 
 <img src="/images/sanalmakina/sanal.png"/>
+
+
 <code>yeni</code> kısmını tıklayarak yeni bir sanal makina oluşturuyoruz.
+
 
 <img src="/images/sanalmakina/sanal1.png"></a>
 
@@ -31,23 +34,33 @@ Sanal makinamıza bir isim veriyoruz ve işletim sistemimizi seçiyoruz.Ben bura
 
 İşletim sistemimiz için ne kadar bellek(RAM) ayıracağımız belirliyoruz.Benim 2GB RAM'im var o yüzden sanal Ubuntu için 512MB'lık RAM ayırdım.Ayıracağınız RAM miktarı toplam RAM kapasitesine bağlıdır.İleri diyerek devam edin.
 
+
 <b>NOT:</b>Virtualbox için ayırmış olduğunuz RAM,bilgisayarınızın RAM'inden ayrılıp Virtualbox için kullanılacaktır.Örneğin ben her sanal Ubuntu'yu açtığımda 2GB RAM den 512MB'ını normal işletim sisteminde kullanamaz hale geliyorum.Sanal OS(operating system) için ayırdığınız RAM miktarı sadece Vİrtualbox çalıştığı zaman geçerli.
+
 
 <img src="/images/sanalmakina/sanal3.png"></a>
 
+
 Sabit diskimizin depolama tipini seçiyoruz.Eğer sadece deneyip kapatıcam diyorsanız dinamik olarak genişleyen kalıp sanal OS için uygundur.Yani yapacağımız eklentiler veya sonradan kuracağımız programlara uyumluluk olması açısındanda idealdir.
+
 
 <img src="/images/sanalmakina/sanal4.png"></a>
 
+
 Dizin yolunu değiştirmek istemezseniz ön tanımlı olarak /home/kullanıcıadı/VirtualBoxVMs/sanal makinamıza vermiş olduğumuz ad olarak komum adı oluşur.Ben sanal sabit disk için 16GB'lık bir alan ayırıyorum.Bu alan sizin bilgisayarınızın HDD kapasitesine veya keyfinize göre değişebilir.Ancak bu boyut en az 8GB olmalıdır.
+
 
 <img src="/images/sanalmakina/sanal5.png"></a>
 
+
 İleri dediğimizde karşımıza kurulumun özeti çıkar.Bitir diyerek ekranın sol tarafında sanal OS'mizi görebiliriz. 
+
 
 <img src="/images/sanalmakina/sanal6.png"></a>
 
+
 Artık Ubuntuyu kurabiliriz.Bunu iki şekilde yapabiliriz.İnternetten indirip CD'ye yazdırdığımız.iso dosyasını kullanabiliriz ya da hiç CD ye yazdırmadan direk bilgisyarımızda kayıtlı olan .iso dosyasını kullanarak yükleme yapabiliriz.Ben CD'ye yazdırmadan masaüstüme kayıt ettiğim Ubuntu 10.iso dosyasınından kuracağım.
+
 
 <img src="/images/sanalmakina/sanal7.png"></a>
 
