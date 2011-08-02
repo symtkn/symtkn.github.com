@@ -23,7 +23,7 @@ Uygulamalar > Donatılar > VirtualBox OSE yolunu izleyerek sanal makinamızı a�
 <img src="/images/sanalmakina/sanal.png"/>
 
 
-<code>yeni</code> kısmını tıklayarak yeni bir sanal makina oluşturuyoruz.
+Yeni kısmını tıklayarak yeni bir sanal makina oluşturuyoruz.
 
 
 <img src="/images/sanalmakina/sanal1.png"></a>
@@ -38,7 +38,7 @@ Sanal makinamıza bir isim veriyoruz ve işletim sistemimizi seçiyoruz.Ben bura
 
 <br><br>
 
-<b>NOT:</b>Virtualbox için ayırmış olduğunuz RAM,bilgisayarınızın RAM'inden ayrılıp Virtualbox için kullanılacaktır.Örneğin ben her sanal Ubuntu'yu açtığımda 2GB RAM den 512MB'ını normal işletim sisteminde kullanamaz hale geliyorum.Sanal OS(operating system) için ayırdığınız RAM miktarı sadece Vİrtualbox çalıştığı zaman geçerli.
+NOT:Virtualbox için ayırmış olduğunuz RAM,bilgisayarınızın RAM'inden ayrılıp Virtualbox için kullanılacaktır.Örneğin ben her sanal Ubuntu'yu açtığımda 2GB RAM den 512MB'ını normal işletim sisteminde kullanamaz hale geliyorum.Sanal OS(operating system) için ayırdığınız RAM miktarı sadece Vİrtualbox çalıştığı zaman geçerli.
 
 Sabit diskimizin depolama tipini seçiyoruz.Eğer sadece deneyip kapatıcam diyorsanız dinamik olarak genişleyen kalıp sanal OS için uygundur.Yani yapacağımız eklentiler veya sonradan kuracağımız programlara uyumluluk olması açısındanda idealdir.
 
