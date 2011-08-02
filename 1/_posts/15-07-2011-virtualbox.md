@@ -34,12 +34,11 @@ Sanal makinamıza bir isim veriyoruz ve işletim sistemimizi seçiyoruz.Ben bura
 
 İşletim sistemimiz için ne kadar bellek(RAM) ayıracağımız belirliyoruz.Benim 2GB RAM'im var o yüzden sanal Ubuntu için 512MB'lık RAM ayırdım.Ayıracağınız RAM miktarı toplam RAM kapasitesine bağlıdır.İleri diyerek devam edin.
 
-
-<b>NOT:</b>Virtualbox için ayırmış olduğunuz RAM,bilgisayarınızın RAM'inden ayrılıp Virtualbox için kullanılacaktır.Örneğin ben her sanal Ubuntu'yu açtığımda 2GB RAM den 512MB'ını normal işletim sisteminde kullanamaz hale geliyorum.Sanal OS(operating system) için ayırdığınız RAM miktarı sadece Vİrtualbox çalıştığı zaman geçerli.
-
-
 <img src="/images/sanalmakina/sanal3.png"></a>
 
+<br><br>
+
+<b>NOT:</b>Virtualbox için ayırmış olduğunuz RAM,bilgisayarınızın RAM'inden ayrılıp Virtualbox için kullanılacaktır.Örneğin ben her sanal Ubuntu'yu açtığımda 2GB RAM den 512MB'ını normal işletim sisteminde kullanamaz hale geliyorum.Sanal OS(operating system) için ayırdığınız RAM miktarı sadece Vİrtualbox çalıştığı zaman geçerli.
 
 Sabit diskimizin depolama tipini seçiyoruz.Eğer sadece deneyip kapatıcam diyorsanız dinamik olarak genişleyen kalıp sanal OS için uygundur.Yani yapacağımız eklentiler veya sonradan kuracağımız programlara uyumluluk olması açısındanda idealdir.
 
