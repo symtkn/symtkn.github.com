@@ -22,17 +22,17 @@ title: Ubuntu Üzerine Java Kurulumu
 <code>$ sudo mv jdk1.7.0/ /usr/lib/jvm/</code><br>
 
    Şimdiki komutlarlada sistem java kaynaklarını yeni yüklediğimiz 1.7 versiyonuna bağlıyoruz.<br>
-<b>
+
 <code> $ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1</code><br>
 <code>$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1</code><br>
 <code>$ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1</code>
-</b>
+
 Böylece kurulum tamamlanmış bulunmaktadır.
 
 ###<a id="yapilandirma"> Yapılandırma </a>
 
 Sistemdeki Javalardan hangisini kullanacağımızı seçerken şu komutu kullanırız:
-<br><b>
+
 <code>$ sudo update-alternatives --config java</code><br>
 Bu işlemlerden sonra java'nın sağlıklı çalışması için sistemi reboot etmenizi tavsiye ederim :-)
 
