@@ -39,24 +39,29 @@ Aşağıda ki diyagram da Hibernate’in uygulamaya veri kalıcılığı sağlam
 
    Bu mimari uygulamayı altta yatan JDBC/JTA/JNDI katmanlarından soyutlar ve detayları Hibernate’e bırakır.
 
-<font color="red"> SessionFactory : </font>SessionFactory derlenmiş basit bir veri tabanı adreslemelerinin tutulduğu alan olarak tanımlanabilir.
+<font color="red"> SessionFactory : </font>
+SessionFactory derlenmiş basit bir veri tabanı adreslemelerinin tutulduğu alan olarak tanımlanabilir.
 
-<font color="red"> Session : </font>Uygulama ve kalıcı veriler arasında ki tek iş parçacıklı kısa süreli bir görüşmeyi temsil eder.
+<font color="red"> Session : </font>
+Uygulama ve kalıcı veriler arasında ki tek iş parçacıklı kısa süreli bir görüşmeyi temsil eder.
 
-<font color="red"> Persistent objects and collections : </font>İş methodları içerebilen kalıcı durumlu tek iş parçacıklı, 
-kısa ömürlü nesnelerdir. Bu nesneler belli bir anda tek bir oturumla(Session nesnesiyle) ilişkili olup oturum sonlandığında
- nesneler serbest kalır ve herhangi bir uygulama katmanı tarafından kullanıma hazır hale gelirler.
+<font color="red"> Persistent objects and collections : </font>
+İş methodları içerebilen kalıcı durumlu tek iş parçacıklı, kısa ömürlü nesnelerdir. Bu nesneler belli bir anda tek bir oturumla
+(Session nesnesiyle) ilişkili olup oturum sonlandığında nesneler serbest kalır ve herhangi bir uygulama katmanı tarafından kullanıma
+hazır hale gelirler.
 
-<font color="red"> Transient Objects and Collections : </font>Bir oturumla(Session nesnesiyle) ilişkilendirilmemiş
-kalıcı sınıf nesneleridir.
+<font color="red"> Transient Objects and Collections : </font>
+Bir oturumla(Session nesnesiyle) ilişkilendirilmemiş kalıcı sınıf nesneleridir.
 
-<font color="red"> Transaction : </font>Uygulama tarafından işin atomik birimlerini belirtmek amacıyla kullanılan tek iş parçacıklı,
-kısa ömürlü nesnelerdir. Bir Session belli koşullarda birden çok transactiona yayılabilmektedir. 
-Transactionlar uygulamayı JDBC, JTA ya da CORBA alt katmanlarından yalıtır.
+<font color="red"> Transaction : </font>
+Uygulama tarafından işin atomik birimlerini belirtmek amacıyla kullanılan tek iş parçacıklı,kısa ömürlü nesnelerdir. Bir Session 
+belli koşullarda birden çok transactiona yayılabilmektedir. Transactionlar uygulamayı JDBC, JTA ya da CORBA alt katmanlarından yalıtır.
 
-<font color="red"> ConnectionProvider : </font>JDBC bağlantılarının tutulur ve JDBC bağlantıları üretmektedir. Uygulamayı altta yatan Datasource ve DriverManager katmanlarından soyutlar.
+<font color="red"> ConnectionProvider : </font>
+JDBC bağlantılarının tutulur ve JDBC bağlantıları üretmektedir. Uygulamayı altta yatan Datasource ve DriverManager katmanlarından soyutlar.
 
-<font color="red"> TransactionFactory : </font>Transactionlar için bir fabrika işlevi görür.
+<font color="red"> TransactionFactory : </font>
+Transactionlar için bir fabrika işlevi görür.
 
 ###<a id="hb-yapılandırma"> 3- Yapılandırması</a>
 
