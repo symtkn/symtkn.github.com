@@ -29,7 +29,7 @@ Uçbirimde sırasıyla yapmamız gereken işlemler:
 <li>Eğer kurtarma modu diye bir seçenek varsa seçin ve B'yi tuşalayın.Makineyı tek kullanıcı modunda başlatmış olcaksınız.</li><br>
 <li>Böyle bir seçenek yoksa, varsayılan açılış yapılandırılması seçili olmalıdır.Düzenlemek için E'yi tuşlayın. </li><br>
 <li>"<u>kernel</u>" ile başlayan satıra gelin ve o satırı düzenlemek için E'yi tuşlayın.</li><br>
-<li>Satırın sonuna ilave bir değer olarak </code>single</code> yazın.Enter'a basın be B'yi tuşlayınız.</li><br>
+<li>Satırın sonuna ilave bir değer olarak <code>single</code> yazın.Enter'a basın be B'yi tuşlayınız.</li><br>
 
 Sistem tek kullanıcılı modda açılmış olmalı.Açıldığında otomatik olarak giriş yapmış ve komut satırına gelmiş olacaksız.
 
