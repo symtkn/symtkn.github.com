@@ -17,13 +17,13 @@ ve bağlantı kurma işlemidir. Küçük nesnelerle bu işlemi yapmak kolay iken
 tabloların sayısı arttıkça bu işleminin yapılması oldukça zor bir hal alır.
 
   Karmaşıklaşan nesne modeli ve ilişkileri karşımıza sorun olarak çıkar. Hibernate bu nokta da bu işlemleri en başarılı 
-şekilde yerine getirmemizde bize büyük kolaylık, rahatlık ve başarım sağlar. </br>
+şekilde yerine getirmemizde bize büyük kolaylık, rahatlık ve başarım sağlar. 
 Hibernate Java'da kalıcı veri yönetimine bütün bir çözüm getiren bir projedir. Java için bir ORM Kitaplığı yani bir Nesne-İlişkisel
 Eşleme aracıdır.
     
   Uygulamaların, ilişkisel veri tabanı ile etkileşimine aracılık eder. Basit bir Java nesnesinin kalıcı hale gelmesini
 ve kaydedilmiş kalıcı nesneyi geri yüklememizi basit komutlarla sağlar. Bu da geliştiricinin <font color="red">sadece iş 
-mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.</br>
+mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.
 Geliştiricisi Gavin King'e göre kalıcı nesneler, başka bir nesneden türetilmeyen basit Java nesneleri POJO(Plan Old Java Object) olmalıydı. Belirli katı standartları olmamalı ve güçlü bir sorgulama dilini desteklemeliydi. Ve bunların hepsi açık kaynak kodlu olmalıydı.
 
 ###<a id="hb-mimari"> 2- Mimari Yapısı</a>
@@ -70,7 +70,7 @@ ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız g
   Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
 XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
 
-<b>NOT :</b> Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
+<b>NOT : </b>Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
 
 ###<a id="xml-tabanlı-ayarlar"> 4- XML Tabanlı Yapılandırma</a>
 <font color="blue">hibernate.cfg.xml :</font>
