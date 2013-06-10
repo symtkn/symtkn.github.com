@@ -70,7 +70,8 @@ ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız g
   Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
 XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
 
-<b>NOT : </b><p>Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.</p>
+<b>NOT : </b>
+Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
 
 ###<a id="xml-tabanlı-ayarlar"> 4- Ayarlar Yapılırken XML Tabanlı Dosya Kullanmak</a>
 
