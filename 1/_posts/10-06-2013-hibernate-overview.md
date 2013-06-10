@@ -2,7 +2,7 @@
 layout: post
 title: Hibernate Framework
 ---
-###KONU BaŞLIKLARI
+###KONU BAŞLIKLARI
 
 <li><a href="#hb-tanım"> Neden Hibernate?</a></li><br>
 <li><a href="#hb-mimari"> Mimari Yapısı</a></li><br>
