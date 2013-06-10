@@ -69,10 +69,10 @@ Transactionlar için bir fabrika işlevi görür.
 ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız gerekmektedir.
   Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
 XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
-
 <b>NOT : </b>Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
 
 ###<a id="xml-tabanlı-ayarlar"> 4- XML Tabanlı Yapılandırma</a>
+
 <font color="blue">hibernate.cfg.xml :</font>
 
   <p>Veritabanı ile ilgili bilgiler bu XML dosyasına yazılır. Dolayısıyla kod içerisinde veritabanı işlemleri için herhangi
