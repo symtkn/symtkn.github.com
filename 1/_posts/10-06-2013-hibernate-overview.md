@@ -32,38 +32,38 @@ Geliştiricisi Gavin King'e göre kalıcı nesneler, başka bir nesneden türeti
 Aşağıda ki diyagram da Hibernate’in uygulamaya veri kalıcılığı sağlamak için veri tabanı ve yapılandırma kütüklerini kullandığı görülmektedir.
 
 <img src="/images/hibernate/mimari.png"></a> </br></br>
-
+</br></br>
 <b> -->Daha detaylı gösterimi</b>
-</br><br>
+</br></br>
 <img src="/images/hibernate/alt_yapi.png"></a> </br>
 
    Bu mimari uygulamayı altta yatan JDBC/JTA/JNDI katmanlarından soyutlar ve detayları Hibernate’e bırakır.
 
-<font color="red"> SessionFactory : </font> SessionFactory derlenmiş basit bir veri tabanı  adreslemelerinin tutulduğu alan olarak tanımlanabilir.</br>
+<font color="red"> SessionFactory : </font> SessionFactory derlenmiş basit bir veri tabanı adreslemelerinin tutulduğu alan olarak tanımlanabilir.</br>
 
-<font color="red"> Session : </font> Uygulama ve kalıcı veriler arasında ki tek iş parçacıklı kısa süreli bir görüşmeyi temsil eder.</br>
+<font color="red"> Session : </font> Uygulama ve kalıcı veriler arasında ki tek iş parçacıklı kısa süreli bir görüşmeyi temsil eder.
 
 <font color="red"> Persistent objects and collections : </font> İş methodları içerebilen kalıcı durumlu tek iş parçacıklı, 
 kısa ömürlü nesnelerdir. Bu nesneler belli bir anda tek bir oturumla(Session nesnesiyle) ilişkili olup oturum sonlandığında
- nesneler serbest kalır ve herhangi bir uygulama katmanı tarafından kullanıma hazır hale gelirler.</br>
+ nesneler serbest kalır ve herhangi bir uygulama katmanı tarafından kullanıma hazır hale gelirler.
 
 <font color="red"> Transient and detached objects and collections :</font> Bir oturumla(Session nesnesiyle) ilişkilendirilmemiş
-kalıcı sınıf nesneleridir.</br>
+kalıcı sınıf nesneleridir.
 
 <font color="red"> Transaction :</font> Uygulama tarafından işin atomik birimlerini belirtmek amacıyla kullanılan tek iş parçacıklı,
 kısa ömürlü nesnelerdir. Bir Session belli koşullarda birden çok transactiona yayılabilmektedir. 
-Transactionlar uygulamayı JDBC, JTA ya da CORBA alt katmanlarından yalıtır.</br>
+Transactionlar uygulamayı JDBC, JTA ya da CORBA alt katmanlarından yalıtır.
 
-<font color="red"> ConnectionProvider :</font> JDBC bağlantılarının tutulur ve JDBC bağlantıları üretmektedir. Uygulamayı altta yatan Datasource ve DriverManager katmanlarından soyutlar.</br>
+<font color="red"> ConnectionProvider :</font> JDBC bağlantılarının tutulur ve JDBC bağlantıları üretmektedir. Uygulamayı altta yatan Datasource ve DriverManager katmanlarından soyutlar.
 
-<font color="red"> TransactionFactory :</font> Transactionlar için bir fabrika işlevi görür.</br>
+<font color="red"> TransactionFactory :</font> Transactionlar için bir fabrika işlevi görür.
 
 ###<a id="hb-yapılandırma"> 3- Yapılandırması</a>
 
     Bir sessionFactory nesnesi yaratabilmek için ilk önce uygulama yüklenirken eşleme(mapping) dosyalarının yerlerini
-ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız gerekmektedir.<br>
+ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız gerekmektedir.
     Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
-XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.</p><br>
+XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
 <b>NOT :</b> Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
 
 ###<a id="xml-tabanlı-ayarlar"> 4- XML Tabanlı Yapılandırma</a>
@@ -79,7 +79,7 @@ bir ayar yapmamıza gerek kalmaz.Tüm ayarlar bu XML dosyası kullanılarak yap�
 (veri tabanı, kütükler) saklanmasıyla sağlanır.
 
     Hibernate kalıcı sınıfların <font color="red">Plain Old Java Objects (POJO)</font> denilen programlama modeline uymasını 
-bekler.</br>
+bekler.
     Kalıcı sınıflar "java bean" tarzında yazılmalıdır. Çünkü Hibernate verilerin Javabean tarzında yazılmış olduğunu varsayar. 
  <b>JavaBean</b> tarzı sınıf demek tüm nitelikleri private olan, belirleyici niteliği sıralı(serialized) olan, niteliklerine 
 ulaşmak için get/set methodları tanımlayan ve boş bir yapıcısı bulunan sınıf demektir. Tüm kalıcı sınıfların public olan bir 
