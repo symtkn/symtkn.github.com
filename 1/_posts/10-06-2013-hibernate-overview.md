@@ -7,7 +7,7 @@ title: Hibernate Framework
 <li><a href="#hb-tanım"> Neden Hibernate?</a></li><br>
 <li><a href="#hb-mimari"> Mimari Yapısı</a></li><br>
 <li><a href="#hb-yapılandırma"> Yapılandırması</a></li><br>
-<li><a href="#xml-tabanlı-ayarlar"> XML Tabanlı Yapılandırma</a></li><br>
+<li><a href="#xml-tabanlı-ayarlar"> Ayarlar Yapılırken XML Tabanlı Dosya Kullanmak</a></li><br>
 <li><a href="#pojo"> Kalıcı Sınıflar</a></li><br>
 
 ###<a id="hb-tanım"> 1- Neden Hibernate?</a>
@@ -72,7 +72,7 @@ XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
 
 <b>NOT : </b>Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
 
-###<a id="xml-tabanlı-ayarlar"> 4- XML Tabanlı Yapılandırma</a>
+###<a id="xml-tabanlı-ayarlar"> 4- Ayarlar Yapılırken XML Tabanlı Dosya Kullanmak</a>
 
 <font color="blue">hibernate.cfg.xml :</font>
 
