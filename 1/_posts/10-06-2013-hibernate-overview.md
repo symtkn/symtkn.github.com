@@ -14,7 +14,7 @@ title: Hibernate Framework
 
     <p>Nesne İlişkisel Eşleme (ORM / Object-Relational Mapping ), İlişkisel Veri tabanı ile Nesneler arasında çevirme yapma ve bağlantı kurma işlemidir. Küçük nesnelerle bu işlemi yapmak kolay iken nesnelerin, verilerin ve birleştirmemiz gereken tabloların sayısı arttıkça bu işleminin yapılması oldukça zor bir hal alır.
 Karmaşıklaşan nesne modeli ve ilişkileri karşımıza sorun olarak çıkar. Hibernate bu nokta da bu işlemleri en başarılı şekilde yerine getirmemizde bize büyük kolaylık, rahatlık ve başarım sağlar. </br>
-Hibernate Java'da kalıcı veri yönetimine bütün bir çözüm getiren bir projedir. Java için bir ORM Kitaplığı yani bir Nesne-İlişkisel Eşleme aracıdır.</br>
+Hibernate Java'da kalıcı veri yönetimine bütün bir çözüm getiren bir projedir. Java için bir ORM Kitaplığı yani bir Nesne-İlişkisel Eşleme aracıdır.</p></br>
 Uygulamaların, ilişkisel veri tabanı ile etkileşimine aracılık eder. Basit bir Java nesnesinin kalıcı hale gelmesini ve kaydedilmiş kalıcı nesneyi geri yüklememizi basit komutlarla sağlar. Bu da geliştiricinin <font color="red">sadece iş mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.</br>
 Geliştiricisi Gavin King'e göre kalıcı nesneler, başka bir nesneden türetilmeyen basit Java nesneleri POJO(Plan Old Java Object) olmalıydı. Belirli katı standartları olmamalı ve güçlü bir sorgulama dilini desteklemeliydi. Ve bunların hepsi açık kaynak kodlu olmalıydı.
 
