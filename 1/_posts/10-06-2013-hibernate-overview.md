@@ -26,7 +26,7 @@ ve kaydedilmiş kalıcı nesneyi geri yüklememizi basit komutlarla sağlar. Bu 
 mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.</br>
 Geliştiricisi Gavin King'e göre kalıcı nesneler, başka bir nesneden türetilmeyen basit Java nesneleri POJO(Plan Old Java Object) olmalıydı. Belirli katı standartları olmamalı ve güçlü bir sorgulama dilini desteklemeliydi. Ve bunların hepsi açık kaynak kodlu olmalıydı.
 
-###<a id="hb-mimarisi"> 2- Mimari Yapısı</a>
+###<a id="hb-mimari"> 2- Mimari Yapısı</a>
 
 <b>Genel Görünüm</b>
 Aşağıda ki diyagram da Hibernate’in uygulamaya veri kalıcılığı sağlamak için veri tabanı ve yapılandırma kütüklerini kullandığı görülmektedir.
