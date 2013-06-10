@@ -12,10 +12,17 @@ title: Hibernate Framework
 
 ###<a id="hb-tanım"> 1- Neden Hibernate?</a>
 
-    <p>Nesne İlişkisel Eşleme (ORM / Object-Relational Mapping ), İlişkisel Veri tabanı ile Nesneler arasında çevirme yapma ve bağlantı kurma işlemidir. Küçük nesnelerle bu işlemi yapmak kolay iken nesnelerin, verilerin ve birleştirmemiz gereken tabloların sayısı arttıkça bu işleminin yapılması oldukça zor bir hal alır.
-Karmaşıklaşan nesne modeli ve ilişkileri karşımıza sorun olarak çıkar. Hibernate bu nokta da bu işlemleri en başarılı şekilde yerine getirmemizde bize büyük kolaylık, rahatlık ve başarım sağlar. </br>
-Hibernate Java'da kalıcı veri yönetimine bütün bir çözüm getiren bir projedir. Java için bir ORM Kitaplığı yani bir Nesne-İlişkisel Eşleme aracıdır.</p></br>
-Uygulamaların, ilişkisel veri tabanı ile etkileşimine aracılık eder. Basit bir Java nesnesinin kalıcı hale gelmesini ve kaydedilmiş kalıcı nesneyi geri yüklememizi basit komutlarla sağlar. Bu da geliştiricinin <font color="red">sadece iş mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.</br>
+    <p>Nesne İlişkisel Eşleme (ORM / Object-Relational Mapping ), İlişkisel Veri tabanı ile Nesneler arasında çevirme yapma 
+ve bağlantı kurma işlemidir. Küçük nesnelerle bu işlemi yapmak kolay iken nesnelerin, verilerin ve birleştirmemiz gereken 
+tabloların sayısı arttıkça bu işleminin yapılması oldukça zor bir hal alır.
+
+    Karmaşıklaşan nesne modeli ve ilişkileri karşımıza sorun olarak çıkar. Hibernate bu nokta da bu işlemleri en başarılı şekilde 
+yerine getirmemizde bize büyük kolaylık, rahatlık ve başarım sağlar. </br>
+Hibernate Java'da kalıcı veri yönetimine bütün bir çözüm getiren bir projedir. Java için bir ORM Kitaplığı yani bir Nesne-İlişkisel
+Eşleme aracıdır.</p></br>
+    
+    Uygulamaların, ilişkisel veri tabanı ile etkileşimine aracılık eder. Basit bir Java nesnesinin kalıcı hale gelmesini ve kaydedilmiş
+kalıcı nesneyi geri yüklememizi basit komutlarla sağlar. Bu da geliştiricinin <font color="red">sadece iş mantığına</font> odaklanmasını sağlar. Takip edilmesini gerektiren belli katı kuralları yoktur. Bu sayede hem yeni hem de var olan projelere herhangi bir değişiklik gerektirmeden başarılı bir şekilde uyum sağlar.</br>
 Geliştiricisi Gavin King'e göre kalıcı nesneler, başka bir nesneden türetilmeyen basit Java nesneleri POJO(Plan Old Java Object) olmalıydı. Belirli katı standartları olmamalı ve güçlü bir sorgulama dilini desteklemeliydi. Ve bunların hepsi açık kaynak kodlu olmalıydı.
 
 ###<a id="hb-mimarisi"> 2- Mimari Yapısı</a>
@@ -59,8 +66,9 @@ Aşağıda ki diyagram da Hibernate’in uygulamaya veri kalıcılığı sağlam
 
 ###<a id="pojo"> 5- Kalıcı Sınıflar</a>
 
-    Kalıcı sınıflar yapılacak işe ait varlıklara karşılık gelirler. Kalıcılık, verinin herhangi bir veri saklama ortamında (veri tabanı, kütükler) saklanmasıyla sağlanır.
+    Kalıcı sınıflar yapılacak işe ait varlıklara karşılık gelirler. Kalıcılık, verinin herhangi bir veri saklama ortamında 
+(veri tabanı, kütükler) saklanmasıyla sağlanır.
 
-    Hibernate kalıcı sınıfların <font color="red">Plain Old Java Objects (POJO)</font> denilen programlama modeline uymasını bekler.
+    Hibernate kalıcı sınıfların <font color="red">Plain Old Java Objects (POJO)</font> denilen programlama modeline uymasını bekler.</br>
     Kalıcı sınıflar "java bean" tarzında yazılmalıdır. Çünkü Hibernate verilerin Javabean tarzında yazılmış olduğunu varsayar. 
  <b>JavaBean</b> tarzı sınıf demek tüm nitelikleri private olan, belirleyici niteliği sıralı(serialized) olan, niteliklerine ulaşmak için get/set methodları tanımlayan ve boş bir yapıcısı bulunan sınıf demektir. Tüm kalıcı sınıfların public olan bir önbelirli yapılandırıcısının olması gerekir. Bu Hibernate’in <code>Constructor.newInstance()</code> methodunu kullanmasını sağlar.
