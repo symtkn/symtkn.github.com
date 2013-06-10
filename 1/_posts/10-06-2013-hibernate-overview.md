@@ -60,9 +60,9 @@ Transactionlar uygulamayı JDBC, JTA ya da CORBA alt katmanlarından yalıtır.
 
 ###<a id="hb-yapılandırma"> 3- Yapılandırması</a>
 
-    Bir sessionFactory nesnesi yaratabilmek için ilk önce uygulama yüklenirken eşleme(mapping) dosyalarının yerlerini
+  Bir sessionFactory nesnesi yaratabilmek için ilk önce uygulama yüklenirken eşleme(mapping) dosyalarının yerlerini
 ayarlamak amacıyla Configuration sınıfının bir kopyasını oluşturmamız gerekmektedir.
-    Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
+  Hibernate’ te XML eşleme dosyaları <b>.hbm.xml</b> uzantılı olmak zorundadır ve bunlar her bir sınıf için hepsi bir
 XML eşleme dosyası yerine ayrı ayrı oluşturulmalıdır.
 
 <b>NOT :</b> Her kalıcı sınıf için oluşturulan bu XML eşleme dosyası aynı dizine konulmalıdır.
@@ -76,12 +76,12 @@ bir ayar yapmamıza gerek kalmaz.Tüm ayarlar bu XML dosyası kullanılarak yap�
 
 ###<a id="pojo"> 5- Kalıcı Sınıflar</a>
 
-    Kalıcı sınıflar yapılacak işe ait varlıklara karşılık gelirler. Kalıcılık, verinin herhangi bir veri saklama
+  Kalıcı sınıflar yapılacak işe ait varlıklara karşılık gelirler. Kalıcılık, verinin herhangi bir veri saklama
 ortamında (veri tabanı, kütükler) saklanmasıyla sağlanır.
 
-    Hibernate kalıcı sınıfların <font color="red">Plain Old Java Objects (POJO)</font> denilen programlama modeline
+  Hibernate kalıcı sınıfların <font color="red">Plain Old Java Objects (POJO)</font> denilen programlama modeline
 uymasını bekler.
-    Kalıcı sınıflar "java bean" tarzında yazılmalıdır. Çünkü Hibernate verilerin Javabean tarzında yazılmış olduğunu varsayar. 
+  Kalıcı sınıflar "java bean" tarzında yazılmalıdır. Çünkü Hibernate verilerin Javabean tarzında yazılmış olduğunu varsayar. 
  <b>JavaBean</b> tarzı sınıf demek tüm nitelikleri private olan, belirleyici niteliği sıralı(serialized) olan, niteliklerine 
 ulaşmak için get/set methodları tanımlayan ve boş bir yapıcısı bulunan sınıf demektir. Tüm kalıcı sınıfların public olan bir 
 önbelirli yapılandırıcısının olması gerekir. Bu Hibernate’in <code>Constructor.newInstance()</code> methodunu kullanmasını sağlar.
