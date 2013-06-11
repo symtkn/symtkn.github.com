@@ -80,18 +80,18 @@ Program çerçevesinde yer almak zorunda olmayan bazı metot (transaction, loggi
 
 ###<a id="xml_konfigurasyon"> XML Konfigürasyon Kullanımı</a>
 IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u gerekir.
-<ol>
+<ul>
 <li><b>Spring IoC çalışma şekli :</b></li>
 <img src="/images/spring/Ioc_scheme.png"></a>
 
 <li><b>Metadata Konfigürasyon Seçenekleri :</b>
-	<lo>
+	<lu>
 	<li>XML kullanımı (Sınıf dosyaları değişmez.)</li>
 	<li>Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)</li>
 	<li>Anotasyonlar (Sınıf dosyaları değişmez.)</li>
-	</lo>
+	</lu>
 </li>
-</ol>
+</ul>
 
 ###<a id="xml_file"> Spring XML Dosyasını Tanıyalım</a>
   -Birden fazla bean kullanılabilir. Aynı XML dosyasında aynı bean id birden fazla kullanılamaz. 
@@ -112,7 +112,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
 
 <code>
 <bean id="company" class="examples.Company">
-    <constructor-arg name="customer" ref= "myCustomer"/><
+    <constructor-arg name="customer" ref= "myCustomer"/>
     <constructor-arg name="since" value="1992"/>
 </bean>
 
@@ -174,24 +174,28 @@ public class Address {
 </code>
 <br>
 ###<a id="data_type"> Değişkenleri Data Tiplerine Bağlama</a>
-   Temel tipler için otomatik değer çevirme mevcuttur.
+   Temel tipler için otomatik değer çevirme mevcuttur.<br>
 <b>P-namespace :</b>
     Daha kısa bir Spring dosyası elde etmemizi sağlar.
-    p:degiskenAdi= "value"
+    p:degiskenAdi= "value"<br>
 <b>C-namespace :</b>
     Constructor içindir. P-namespace ile aynı şekilde kullanılır.
+
 ###<a id="collections"> Java Collections Kullanımı</a>
-<list>,  <map>, <set>  içerisinde List, Set, Map, Properties data tipleri kullanılabilir.
-<b>List :</b>
+<code><list>,  <map>, <set></code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.
+<b>List :</b><br>
 <img src="/images/spring/list_collection.png"></a>
-<b>Map :</b>
+<br>
+<b>Map :</b><br>
 <img src="/images/spring/map_collection.png"></a>
-<b>Set :</b>
+<br>
+<b>Set :</b><br>
 <img src="/images/spring/set_collection.png"></a>
+<br><br>
 <font color="red">Lazy kullanımı :</font>
 Metadata bilgisinde <b>‘lazy-init=true’</b> ifadesi bulunan bean ler program içerisinde ne zaman gerekli olursa o zaman nesnesi yaratılır. 
 <font color="red">Scope :</font>
-Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.
+Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 <u>Singleton Scope:</u> Bean nesne sadece bir kere oluşturulur ve her sorgulamada bu nesne kullanılır.
 <u>Prototype Scope:</u> Bean nesnesi her sorgulamada oluşturulur ve aynı nesne kullanılmaz.
 
@@ -201,7 +205,7 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.
 <li>Session</li>
 <li>Global Session</li>
 
-***<b>‘web.xml’</b> dosyası içerisinde, kullandığımız web servlet container sürümüne göre değişiklikler yapmalıyız.
+*** <b>‘web.xml’</b> dosyası içerisinde, kullandığımız web servlet container sürümüne göre değişiklikler yapmalıyız.
 Örneğin Servlet 2.4 ve daha yeni web container için:
 
 <code>
@@ -217,16 +221,16 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.
 ###<a id="annotation"> Temel Anotasyonlar</a>
 
 <b>@Configuration :</b>
-    Spring, sınıf ve içindeki tüm metotları container olarak görür.
+    Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
 <b>@Bean :</b>
-    Her bir metodun bean olarak gözükmesini sağlar.
+    Her bir metodun bean olarak gözükmesini sağlar.<br>
 <b>@Autowired :</b>
-    Gerekli olan bean i otomatik olarak bulur.
+    Gerekli olan bean i otomatik olarak bulur.<br>
 <b>@Resource :</b>
-    Autowired anotasyonu ile aynıdır. Ek olarak kullanılmasını istediğimiz bean ismini belirtebiliriz.
+    Autowired anotasyonu ile aynıdır. Ek olarak kullanılmasını istediğimiz bean ismini belirtebiliriz.<br>
 <b>@ImportResource :</b>
-    Xml dosyası ile configuration dosyasını birleştirir.
+    Xml dosyası ile configuration dosyasını birleştirir.<br>
 <b>@Value :</b>
-    Properties dosyası içerisindeki verileri otomatik olarak almamızı sağlar.
+    Properties dosyası içerisindeki verileri otomatik olarak almamızı sağlar.<br>
 Örneğin: @Value("${variableName}")
 
