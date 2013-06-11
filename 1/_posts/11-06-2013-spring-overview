@@ -30,7 +30,7 @@ title: Spring Framework
 <li>Kullanım özgürlüğü tanır.(Parçalar birbirinden bağımsız şekilde kullanılabilir. Örneğin: Modüler yapı)
 </ul>
 
-<b><u>Spring Framework Modüler Yapısı</b></u>
+<b><u>Spring Framework Modüler Yapısı</u></b>
 <img src="/images/spring/branch.png"></a>
 
 <font color="red">Spring Core:</font>
