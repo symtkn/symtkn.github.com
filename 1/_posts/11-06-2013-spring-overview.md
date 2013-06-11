@@ -111,28 +111,30 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 Genel bir örnek üzerinde bu yapıları incelersek;
 
 <textarea>
-<bean id="company" class="examples.Company">
-    <constructor-arg name="customer" ref= "myCustomer"/>
-    <constructor-arg name="since" value="1992"/>
-</bean>
+&ltbean id="company" class="examples.Company"&gt
+    &ltconstructor-arg name="customer" ref= "myCustomer"/&gt
+    &ltconstructor-arg name="since" value="1992"/&gt
+&lt/bean&gt
 
-<bean id="myCustomer" class="examples.Customer">
-    <property name="name" value="Symtkn"/>
-    <property name="years" value="20"/>
-    <proparty name="address" value="myAddress"/>
-</bean>
-<bean id="myAddress" class="examples.Address"/>
-</textarea>
+&ltbean id="myCustomer" class="examples.Customer"&gt
+    &ltproperty name="name" value="Symtkn"/&gt
+    &ltproperty name="years" value="20"/&gt
+    &ltproparty name="address" value="myAddress"/&gt
+&lt/bean&gt
+&ltbean id="myAddress" class="examples.Address"/&gt
+&lt/textarea&gt
 
 <br>
-Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.
- "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <u><property><u> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.
+Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.<br>
+ "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <u>&ltproperty&gt<u> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
  "Address" sınıfı bir yapıcı metoda sahip fakat bu seferen parametre almamaktadır. Bu yüzden constructor yöntemi kullanılarak nesnesini oluşturmamız yeterli oldu.
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
 <br><br>
 <textarea>
 package examples;
+
 public class Customer {
+
     private String name;
     private String years;
     private Address address;
@@ -152,7 +154,9 @@ public class Customer {
 }
 
 package examples;
+
 public class Company {
+
     private Customer customer;
     private int since;
   
@@ -167,7 +171,9 @@ public class Company {
 }
 
 package examples;
+
 public class Address {
+
     public Address() {
 	System.out.println("Address");
     }
