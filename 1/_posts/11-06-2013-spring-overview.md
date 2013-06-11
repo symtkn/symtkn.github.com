@@ -5,7 +5,7 @@ title: Spring Framework
 ###KONU BAŞLIKLARI
 
 <li><a href="#spring_explain"> Spring Framework Nedir?</a></li><br>
-<li><a href="#_container"> Inversion of Control (IoC)</a></li><br>
+<li><a href="#ioc_container"> Inversion of Control (IoC)</a></li><br>
 <li><a href="#di"> Dependency Injection (DI)</a></li><br>
 <li><a href="#aop"> Aspect Oriented Programming (AOP)</a></li><br>
 <li><a href="#reasons"> Neden Spring Framework?</a></li><br>
@@ -193,14 +193,20 @@ public class Address {
     Constructor içindir. P-namespace ile aynı şekilde kullanılır.
 
 ###<a id="collections"> Java Collections Kullanımı</a>
-<code>&ltlist&gt</code>,  <code>&ltmap&gt</code>, <code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br>
-<b>List :</b><br>
-<img src="/images/spring/list_collection.png"></a>
+
+<code>&ltlist&gt</code>,  <code>&ltmap&gt</code>, <code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br><br>
+
+<b>List :</b>
 <br>
-<b>Map :</b><br>
+<img src="/images/spring/list_collection.png"></a>
+
+<br>
+<b>Map :</b> 
+<br>
 <img src="/images/spring/map_collection.png"></a>
 <br>
-<b>Set :</b><br>
+<b>Set :</b>
+<br>
 <img src="/images/spring/set_collection.png"></a>
 <br><br>
 <font color="red">Lazy kullanımı :</font>
@@ -232,7 +238,8 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 <br>
 ###<a id="annotation"> Temel Anotasyonlar</a>
 <br>
-<b>@Configuration :</b> Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
+<b>@Configuration :</b> 
+Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
 <b>@Bean :</b>
 Her bir metodun bean olarak gözükmesini sağlar.<br>
 <b>@Autowired :</b>
