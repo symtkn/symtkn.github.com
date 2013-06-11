@@ -29,7 +29,7 @@ title: Spring Framework
 <li>Nesne tabanlıdır. Yani POJO tabanlıdır.</li>
 <li>Kullanım özgürlüğü tanır.(Parçalar birbirinden bağımsız şekilde kullanılabilir. Örneğin: Modüler yapı)</li>
 </ul>
-
+<br><br>
 <b>Spring Framework Modüler Yapısı</b>
 <img src="/images/spring/branch.png"></a>
 <br><br>
