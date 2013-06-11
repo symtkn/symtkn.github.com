@@ -125,10 +125,10 @@ Genel bir örnek üzerinde bu yapıları incelersek;
 
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.<br>
- "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <u>&ltproperty&gt<u> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
+ "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini &ltproperty&gt tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
  "Address" sınıfı bir yapıcı metoda sahip fakat bu seferen parametre almamaktadır. Bu yüzden constructor yöntemi kullanılarak nesnesini oluşturmamız yeterli oldu.
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
-<br/><br/>
+<br><br>
 
 <textarea>
 package examples;
@@ -214,18 +214,18 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 <li>Request</li>
 <li>Session</li>
 <li>Global Session</li>
-
+</ol>
 *** <b>‘web.xml’</b> dosyası içerisinde, kullandığımız web servlet container sürümüne göre değişiklikler yapmalıyız.
 Örneğin Servlet 2.4 ve daha yeni web container için:
 
 <code>
-<web-app>
-  <listener>
-    <listener-class>
+&ltweb-app&gt
+  &ltlistener&gt
+    &ltlistener-class&gt
       org.springframework.context.request.RequestContextListener
-    </listener-class>
-  </listener>
-</web-app>
+    &lt/listener-class&gt
+  &lt/listener&gt
+&lt/web-app&gt
 </code>
 <br>
 ###<a id="annotation"> Temel Anotasyonlar</a>
