@@ -81,16 +81,15 @@ Program çerçevesinde yer almak zorunda olmayan bazı metot (transaction, loggi
 ###<a id="xml_konfigurasyon"> XML Konfigürasyon Kullanımı</a>
 IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u gerekir.
 <ul>
-<li><b>Spring IoC çalışma şekli :</b></li>
+<li><b>Spring IoC çalışma şekli :</b></li></ul>
 <img src="/images/spring/Ioc_scheme.png"></a>
-
+<ul>
 <li><b>Metadata Konfigürasyon Seçenekleri :</b></li>
-	<lu>
-	<li>XML kullanımı (Sınıf dosyaları değişmez.)</li>
-	<li>Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)</li>
-	<li>Anotasyonlar (Sınıf dosyaları değişmez.)</li>
-	</lu>
 </ul>
+	* XML kullanımı (Sınıf dosyaları değişmez.)
+	* Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)
+	* Anotasyonlar (Sınıf dosyaları değişmez.)
+
 
 ###<a id="xml_file"> Spring XML Dosyasını Tanıyalım</a>
   -Birden fazla bean kullanılabilir. Aynı XML dosyasında aynı bean id birden fazla kullanılamaz. 
@@ -130,7 +129,7 @@ Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classda
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
 <br><br>
 
-<textarea>
+<textarea rows="20" cols="50">
 package examples;
 
 public class Customer {
