@@ -110,7 +110,7 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 
 Genel bir örnek üzerinde bu yapıları incelersek;
 
-<code>
+<BLOCKQUOTE>
 <bean id="company" class="examples.Company">
     <constructor-arg name="customer" ref= "myCustomer"/>
     <constructor-arg name="since" value="1992"/>
@@ -122,7 +122,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
     <proparty name="address" value="myAddress"/>
 </bean>
 <bean id="myAddress" class="examples.Address"/>
-</code> 
+</BLOCKQUOTE>
 
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.
