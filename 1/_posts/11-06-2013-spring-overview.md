@@ -30,6 +30,7 @@ title: Spring Framework
 <li>Kullanım özgürlüğü tanır.(Parçalar birbirinden bağımsız şekilde kullanılabilir. Örneğin: Modüler yapı)</li>
 </ul>
 <br><br>
+<br>
 <b>Spring Framework Modüler Yapısı</b>
 <img src="/images/spring/branch.png"></a>
 <br><br>
@@ -86,9 +87,9 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 <ul>
 <li><b>Metadata Konfigürasyon Seçenekleri :</b></li>
 </ul>
-	* XML kullanımı (Sınıf dosyaları değişmez.)
-	* Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)
-	* Anotasyonlar (Sınıf dosyaları değişmez.)
+	* XML kullanımı (Sınıf dosyaları değişmez.)<br>
+	* Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)<br>
+	* Anotasyonlar (Sınıf dosyaları değişmez.)<br>
 
 
 ###<a id="xml_file"> Spring XML Dosyasını Tanıyalım</a>
@@ -108,7 +109,7 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 
 Genel bir örnek üzerinde bu yapıları incelersek;
 
-<textarea>
+<textarea rows="12" cols="50"> 
 &ltbean id="company" class="examples.Company"&gt
     &ltconstructor-arg name="customer" ref= "myCustomer"/&gt
     &ltconstructor-arg name="since" value="1992"/&gt
