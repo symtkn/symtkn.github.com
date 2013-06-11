@@ -191,7 +191,7 @@ public class Address {
     Constructor içindir. P-namespace ile aynı şekilde kullanılır.
 
 ###<a id="collections"> Java Collections Kullanımı</a>
-&ltlist&gt,  &ltmap&gt, &ltset&gt tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.
+&ltlist&gt,  &ltmap&gt, &ltset&gt tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br>
 <b>List :</b><br>
 <img src="/images/spring/list_collection.png"></a>
 <br>
