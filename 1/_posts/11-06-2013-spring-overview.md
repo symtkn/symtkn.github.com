@@ -110,7 +110,7 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 
 Genel bir örnek üzerinde bu yapıları incelersek;
 
-<BLOCKQUOTE>
+<textarea>
 <bean id="company" class="examples.Company">
     <constructor-arg name="customer" ref= "myCustomer"/>
     <constructor-arg name="since" value="1992"/>
@@ -122,7 +122,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
     <proparty name="address" value="myAddress"/>
 </bean>
 <bean id="myAddress" class="examples.Address"/>
-</BLOCKQUOTE>
+</textarea>
 
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.
@@ -130,7 +130,7 @@ Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classda
  "Address" sınıfı bir yapıcı metoda sahip fakat bu seferen parametre almamaktadır. Bu yüzden constructor yöntemi kullanılarak nesnesini oluşturmamız yeterli oldu.
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
 <br><br>
-<code>
+<textarea>
 package examples;
 public class Customer {
     private String name;
@@ -172,7 +172,7 @@ public class Address {
 	System.out.println("Address");
     }
 }
-</code>
+</textarea>
 <br>
 ###<a id="data_type"> Değişkenleri Data Tiplerine Bağlama</a>
    Temel tipler için otomatik değer çevirme mevcuttur.<br>
