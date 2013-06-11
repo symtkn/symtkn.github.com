@@ -218,7 +218,7 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 *** <b>‘web.xml’</b> dosyası içerisinde, kullandığımız web servlet container sürümüne göre değişiklikler yapmalıyız.
 Örneğin Servlet 2.4 ve daha yeni web container için:
 
-<code>
+<textarea rows="8" cols="55">
 &ltweb-app&gt
   &ltlistener&gt
     &ltlistener-class&gt
@@ -226,21 +226,21 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
     &lt/listener-class&gt
   &lt/listener&gt
 &lt/web-app&gt
-</code>
+</textarea>
 <br>
 ###<a id="annotation"> Temel Anotasyonlar</a>
 
 <b>@Configuration :</b>
-    Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
+Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
 <b>@Bean :</b>
-    Her bir metodun bean olarak gözükmesini sağlar.<br>
+Her bir metodun bean olarak gözükmesini sağlar.<br>
 <b>@Autowired :</b>
-    Gerekli olan bean i otomatik olarak bulur.<br>
+Gerekli olan bean i otomatik olarak bulur.<br>
 <b>@Resource :</b>
-    Autowired anotasyonu ile aynıdır. Ek olarak kullanılmasını istediğimiz bean ismini belirtebiliriz.<br>
+Autowired anotasyonu ile aynıdır. Ek olarak kullanılmasını istediğimiz bean ismini belirtebiliriz.<br>
 <b>@ImportResource :</b>
-    Xml dosyası ile configuration dosyasını birleştirir.<br>
+Xml dosyası ile configuration dosyasını birleştirir.<br>
 <b>@Value :</b>
-    Properties dosyası içerisindeki verileri otomatik olarak almamızı sağlar.<br>
+Properties dosyası içerisindeki verileri otomatik olarak almamızı sağlar.<br>
 Örneğin: @Value("${variableName}")
 
