@@ -123,6 +123,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
 </bean>
 <bean id="myAddress" class="examples.Address"/>
 </code> 
+
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.
  "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <u><property><u> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.
@@ -182,7 +183,7 @@ public class Address {
     Constructor içindir. P-namespace ile aynı şekilde kullanılır.
 
 ###<a id="collections"> Java Collections Kullanımı</a>
-<code><list>,  <map>, <set></code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.
+<u><list>,  <map>, <set></u> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.
 <b>List :</b><br>
 <img src="/images/spring/list_collection.png"></a>
 <br>
@@ -194,9 +195,10 @@ public class Address {
 <br><br>
 <font color="red">Lazy kullanımı :</font>
 Metadata bilgisinde <b>‘lazy-init=true’</b> ifadesi bulunan bean ler program içerisinde ne zaman gerekli olursa o zaman nesnesi yaratılır. 
+<br>
 <font color="red">Scope :</font>
 Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
-<u>Singleton Scope:</u> Bean nesne sadece bir kere oluşturulur ve her sorgulamada bu nesne kullanılır.
+<u>Singleton Scope:</u> Bean nesne sadece bir kere oluşturulur ve her sorgulamada bu nesne kullanılır.<br>
 <u>Prototype Scope:</u> Bean nesnesi her sorgulamada oluşturulur ve aynı nesne kullanılmaz.
 
 ###<a id="web_scope"> Web Scopes</a>
