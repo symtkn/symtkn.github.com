@@ -194,7 +194,7 @@ public class Address {
 
 ###<a id="collections"> Java Collections Kullanımı</a>
 
-<code>&ltlist&gt</code>,  <code>&ltmap&gt</code>, <code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br><br>
+<code>&ltlist&gt</code>,<code>&ltmap&gt</code>,<code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br><br>
 
 <b>List :</b>
 <br>
