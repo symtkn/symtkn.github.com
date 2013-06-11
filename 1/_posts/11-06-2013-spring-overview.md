@@ -194,7 +194,7 @@ public class Address {
 
 ###<a id="collections"> Java Collections Kullanımı</a>
 
-<code>&ltlist&gt</code>,<code>&ltmap&gt</code> ve <code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br><br>
+Belirli taglar içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br><br>
 
 <b>List :</b>
 <br>
@@ -237,7 +237,7 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 </textarea>
 <br>
 ###<a id="annotation"> Temel Anotasyonlar</a>
-<br>
+
 <b>@Configuration :</b> 
 Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
 <b>@Bean :</b>
