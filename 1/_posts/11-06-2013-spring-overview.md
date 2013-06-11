@@ -85,7 +85,7 @@ Program çerçevesinde yer almak zorunda olmayan bazı metot (transaction, loggi
 IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u gerekir.
 <ul>
 <li><b>Spring IoC çalışma şekli :</b></li></ul>
-<img src="/images/spring/Ioc_scheme.png"></a>
+<img src="/images/spring/Ioc_scheme.png">
 <ul>
 <li><b>Metadata Konfigürasyon Seçenekleri :</b></li>
 </ul>
