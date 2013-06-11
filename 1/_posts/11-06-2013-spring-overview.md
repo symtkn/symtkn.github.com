@@ -22,29 +22,29 @@ title: Spring Framework
 
 <b>Amaç:</b> Ağır olan uygulama geliştirme yükünü hafifletmektir.
 <ul>
-<li>Programcı için bir çok işlemi basitleştirir.
-<li>Kullanımını kolaylaştırır.
-<li>Açık kaynak kodludur.
-<li>Mimarisi Rod Johson’dır.
-<li>Nesne tabanlıdır. Yani POJO tabanlıdır.
-<li>Kullanım özgürlüğü tanır.(Parçalar birbirinden bağımsız şekilde kullanılabilir. Örneğin: Modüler yapı)
+<li>Programcı için bir çok işlemi basitleştirir.</li>
+<li>Kullanımını kolaylaştırır.</li>
+<li>Açık kaynak kodludur.</li>
+<li>Mimarisi Rod Johson’dır.</li>
+<li>Nesne tabanlıdır. Yani POJO tabanlıdır.</li>
+<li>Kullanım özgürlüğü tanır.(Parçalar birbirinden bağımsız şekilde kullanılabilir. Örneğin: Modüler yapı)</li>
 </ul>
 
-<b><u>Spring Framework Modüler Yapısı</u></b>
+<b>Spring Framework Modüler Yapısı</b>
 <img src="/images/spring/branch.png"></a>
-
+<br><br>
 <font color="red">Spring Core:</font>
-Spring core paketi, Spring’in temelini olusturur. Bağlaşım kesme gibi temel fonksiyonlar Spring Core içinde implemente edilmiştir.
+Spring core paketi, Spring’in temelini olusturur. Bağlaşım kesme gibi temel fonksiyonlar Spring Core içinde implemente edilmiştir.<br>
 <font color="red">Spring AOP:</font>
-Spring’in AOP özellikleri direk kullanılmasada, deklaratif transaksiyon ve güvenlik uygulamalarında Spring AOP , Spring Core tarafından dolaylı olarak kullanılır.
+Spring’in AOP özellikleri direk kullanılmasada, deklaratif transaksiyon ve güvenlik uygulamalarında Spring AOP , Spring Core tarafından dolaylı olarak kullanılır.<br>
 <font color="red">Spring MVC:</font>
-Spring MVC (Model-View-Controller) Spring baz alınarak web tabanlı programlar oluşturulabilir. Spring MVC bir web frameworküdür.
+Spring MVC (Model-View-Controller) Spring baz alınarak web tabanlı programlar oluşturulabilir. Spring MVC bir web frameworküdür.<br>
 <font color="red">Spring Context:</font>
-ApplicationContext ve WebApplicationContext gibi sınıflar bu modülde implemente edilmiştir. XML dosyalarından bulunan Spring bean tanımlamalarını okumak ve Spring bean nesnelerini oluşturmak için kullanılırlar.
+ApplicationContext ve WebApplicationContext gibi sınıflar bu modülde implemente edilmiştir. XML dosyalarından bulunan Spring bean tanımlamalarını okumak ve Spring bean nesnelerini oluşturmak için kullanılırlar.<br>
 <font color="red">Spring DAO (Database Access Object):</font>
-Bilgi bankaları üzerinde işlem yapmak için kullanılan JDBC teknolojisini kullanımda daha basit hale getiren sınıflar bu modül içinde yeralır.
+Bilgi bankaları üzerinde işlem yapmak için kullanılan JDBC teknolojisini kullanımda daha basit hale getiren sınıflar bu modül içinde yeralır.<br>
 <font color="red">Spring ORM (Object Relational Mapping):</font>
-Bu modül Hibernate, JDO, TopLink ve IBatis gibi popüler ORM frameworkler ile entegrasyonu sağlamaktır.
+Bu modül Hibernate, JDO, TopLink ve IBatis gibi popüler ORM frameworkler ile entegrasyonu sağlamaktır.<br>
 
 ###<a id="ioc_container"> Inversion of Control (IoC)</a>
 
@@ -84,24 +84,23 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 <li><b>Spring IoC çalışma şekli :</b></li>
 <img src="/images/spring/Ioc_scheme.png"></a>
 
-<li><b>Metadata Konfigürasyon Seçenekleri :</b>
-	<lu>
+<li><b>Metadata Konfigürasyon Seçenekleri :</b></li>
+	<ol>
 	<li>XML kullanımı (Sınıf dosyaları değişmez.)</li>
 	<li>Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)</li>
 	<li>Anotasyonlar (Sınıf dosyaları değişmez.)</li>
-	</lu>
-</li>
+	</ol>
 </ul>
 
 ###<a id="xml_file"> Spring XML Dosyasını Tanıyalım</a>
   -Birden fazla bean kullanılabilir. Aynı XML dosyasında aynı bean id birden fazla kullanılamaz. 
-   Tüm beanler default olarak <b>Singleton</b> olarak oluşturulur.
+   Tüm beanler default olarak <b>Singleton</b> olarak oluşturulur.<br><br>
   -<u>Spring IoC container nesneleri oluştururken 3 teknik kullanır.</u>
      <ol>
      <li>Constructor kullanarak</li>
      <li>Static Factory metodu</li>
      <li>Instance Factory</li>
-     </ol>
+     </ol><br>
   -<u>Spring IoC Dependency Injection Teknikleri:</u>
      <ol>
      <li>Constructor kullanarak</li>
@@ -122,7 +121,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
     &ltproparty name="address" value="myAddress"/&gt
 &lt/bean&gt
 &ltbean id="myAddress" class="examples.Address"/&gt
-&lt/textarea&gt
+</textarea>
 
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.<br>
@@ -179,6 +178,7 @@ public class Address {
     }
 }
 </textarea>
+<br>
 <br>
 ###<a id="data_type"> Değişkenleri Data Tiplerine Bağlama</a>
    Temel tipler için otomatik değer çevirme mevcuttur.<br>
