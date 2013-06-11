@@ -85,11 +85,11 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 <img src="/images/spring/Ioc_scheme.png"></a>
 
 <li><b>Metadata Konfigürasyon Seçenekleri :</b></li>
-	<ol>
+	<lu>
 	<li>XML kullanımı (Sınıf dosyaları değişmez.)</li>
 	<li>Java kullanımı (Sınıf dosyaları değişmez fakat ek konfigürasyon dosyaları gerekir.)</li>
 	<li>Anotasyonlar (Sınıf dosyaları değişmez.)</li>
-	</ol>
+	</lu>
 </ul>
 
 ###<a id="xml_file"> Spring XML Dosyasını Tanıyalım</a>
@@ -128,7 +128,8 @@ Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classda
  "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <u>&ltproperty&gt<u> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
  "Address" sınıfı bir yapıcı metoda sahip fakat bu seferen parametre almamaktadır. Bu yüzden constructor yöntemi kullanılarak nesnesini oluşturmamız yeterli oldu.
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
-<br><br>
+<br/><br/>
+
 <textarea>
 package examples;
 
@@ -178,6 +179,7 @@ public class Address {
     }
 }
 </textarea>
+
 <br>
 <br>
 ###<a id="data_type"> Değişkenleri Data Tiplerine Bağlama</a>
