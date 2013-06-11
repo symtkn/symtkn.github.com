@@ -32,8 +32,10 @@ title: Spring Framework
 <br><br>
 <br>
 <b>Spring Framework Modüler Yapısı</b>
+<br>
 <img src="/images/spring/branch.png"></a>
 <br><br>
+
 <font color="red">Spring Core:</font>
 Spring core paketi, Spring’in temelini olusturur. Bağlaşım kesme gibi temel fonksiyonlar Spring Core içinde implemente edilmiştir.<br>
 <font color="red">Spring AOP:</font>
@@ -109,7 +111,7 @@ IoC container’ a bir şeyler yaptırmak için ‘Metadata Konfigürasyon’ u 
 
 Genel bir örnek üzerinde bu yapıları incelersek;
 
-<textarea rows="12" cols="50"> 
+<textarea rows="12" cols="60"> 
 &ltbean id="company" class="examples.Company"&gt
     &ltconstructor-arg name="customer" ref= "myCustomer"/&gt
     &ltconstructor-arg name="since" value="1992"/&gt
@@ -125,7 +127,7 @@ Genel bir örnek üzerinde bu yapıları incelersek;
 
 <br>
 Kodu açıklarsak; İlk olarak "constructor" kullanarak, "Company" adlı classdan id'si "company" olan bir Ioc nesnesi oluşturduk. Ve bu sınıfın yapıcı metoduna(constructor) parametre olarak başka bir bean id'yi(id="myCustomer" olan sınıfı) referans verdik. İkinci parametre olarakta parametre ismi "since" olan argümana value olarak belirtilen değeri atadık.<br>
- "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini &ltproperty&gt tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
+ "myCustomer" id'sine sahip "Customer" sınıfının sahip olduğu setter metodları kullanılarak sınıf içerisindeki instance variables değerini <code>&ltproperty&gt</code> tagı ile belirtmiş olduk."Address" sınıfı cinsindeki "address" değişkenine bean id'si "myAddress" olan nesneyi injection ettik.<br>
  "Address" sınıfı bir yapıcı metoda sahip fakat bu seferen parametre almamaktadır. Bu yüzden constructor yöntemi kullanılarak nesnesini oluşturmamız yeterli oldu.
 Gerekli class kodları aşağıdaki şekilde yaratılabilir.
 <br><br>
@@ -191,7 +193,7 @@ public class Address {
     Constructor içindir. P-namespace ile aynı şekilde kullanılır.
 
 ###<a id="collections"> Java Collections Kullanımı</a>
-&ltlist&gt,  &ltmap&gt, &ltset&gt tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br>
+<code>&ltlist&gt</code>,  <code>&ltmap&gt</code>, <code>&ltset&gt</code> tagları içerisinde List, Set, Map, Properties data tipleri kullanılabilir.<br>
 <b>List :</b><br>
 <img src="/images/spring/list_collection.png"></a>
 <br>
@@ -218,7 +220,7 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 *** <b>‘web.xml’</b> dosyası içerisinde, kullandığımız web servlet container sürümüne göre değişiklikler yapmalıyız.
 Örneğin Servlet 2.4 ve daha yeni web container için:
 
-<textarea rows="8" cols="55">
+<textarea rows="8" cols="65">
 &ltweb-app&gt
   &ltlistener&gt
     &ltlistener-class&gt
@@ -229,9 +231,8 @@ Bean lerin kapsam, faaliyet ve kullanım alanlarını belirtir.<br>
 </textarea>
 <br>
 ###<a id="annotation"> Temel Anotasyonlar</a>
-
-<b>@Configuration :</b>
-Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
+<br>
+<b>@Configuration :</b> Spring, sınıf ve içindeki tüm metotları container olarak görür.<br>
 <b>@Bean :</b>
 Her bir metodun bean olarak gözükmesini sağlar.<br>
 <b>@Autowired :</b>
