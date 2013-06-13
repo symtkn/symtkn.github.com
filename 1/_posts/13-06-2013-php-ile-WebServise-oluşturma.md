@@ -166,9 +166,7 @@ SOAP otomatik bir değer döner.<br>
 
 $HTTP_RAW_POST_DATA, XML SOAP isteklerini içermelidir.<br>
 
-<br><br>
-
-$server->service satırı XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
+$server->service satırı xXML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 <br>
 <u>SOAP client dosyası :</u>
 <br>
