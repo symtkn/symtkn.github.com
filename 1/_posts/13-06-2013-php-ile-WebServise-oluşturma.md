@@ -125,7 +125,7 @@ Bu projede kullanılan dizinler :
 <b>***</b> Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de enpoint güncellemeniz gerekmektedir.<br>
 SOAP server dosyasının içeriği :
 <br>
-<code>
+<textarea rows="15" cols="60"> 
 &lt?php
 require_once('/lib/nusoap.php');
 // Server(sunucu) örneği yaratılır
@@ -140,25 +140,25 @@ function hello($name) {
 $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
 $server->service($HTTP_RAW_POST_DATA);
 ?&gt
-</code>
+</textarea>
 <br>
-Burada <b>$server</b>  SOAP server işlevselliği için özel bir değişkendir.
-<b>$server->register('myFunction');</b> satırı servis fonksiyonunu tanımlar.
+Burada <b>$server</b>  SOAP server işlevselliği için özel bir değişkendir.<br>
+<b>$server->register('myFunction');</b> satırı servis fonksiyonunu tanımlar.<br>
 
-Bu satırlarda da servis fonksiyonu implement edilir.
+Bu satırlarda da servis fonksiyonu implement edilir.<br>
 <b>
 function hello($parameters) {
 . . .
     return $result;
 }</b>
-SOAP girdileri doğrudan fonksiyon parametreleri olarak alır.
-SOAP otomatik bir değer döner.
+SOAP girdileri doğrudan fonksiyon parametreleri olarak alır.<br>
+SOAP otomatik bir değer döner.<br>
 
-<b>$HTTP_RAW_POST_DATA</b>  XML SOAP isteklerini içermelidir.
-<b>$server->service</b> XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.
+<b>$HTTP_RAW_POST_DATA</b> XML SOAP isteklerini içermelidir.<br>
+<b>$server->service</b> XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 
 <u>SOAP client dosyası :</u>
-<code>
+<textarea rows="10" cols="80"> 
 &lt?php 
 require_once('/lib/nusoap.php');
 // client örneği yaratılır
@@ -168,28 +168,29 @@ $result = $client->call('hello', array('name' => 'symtkn'));
 // sonuç gösterilir
 print_r($result);
 ?&gt
-</code>
+</textarea>
 
-<b>$client</b> SOAP client’ın işlevselliği yönünden özel bir değişkendir.
-<b>$client = new nusoap_client('http://localhost/lotus/helloworld.php', false);</b>
-İlk parametre bir web servis endpoint URL dir.
-İkinci parametre false, WSDL’e ihtiyaç olmadığını belirtir.
-<b>$result = $client->call('hello', array('name' => 'symtkn'));</b>
+<b>$client</b> SOAP client’ın işlevselliği yönünden özel bir değişkendir.<br>
+<b>$client = new nusoap_client('http://localhost/lotus/helloworld.php', false);</b><br>
+İlk parametre bir web servis endpoint URL dir.<br>
+İkinci parametre false, WSDL’e ihtiyaç olmadığını belirtir.<br>
+<b>$result = $client->call('hello', array('name' => 'symtkn'));</b><br>
 
-İlk parametre çağırılacak fonksiyonun ismi, ikinci parametre SOAP girdilerinin listesini tutan bir array. 
-Bu array “parametre ismi => parametre değeri” şeklinde key-value çiftleri halinde bulunur.
+İlk parametre çağırılacak fonksiyonun ismi, ikinci parametre SOAP girdilerinin listesini tutan bir array. <br>
+Bu array “parametre ismi => parametre değeri” şeklinde key-value çiftleri halinde bulunur.<br>
 
-Localhost’unuzda  client.php dosyası ile sunucuya http isteği (http://localhost/lotus/client.php)  gönderirsek sunucu bize şöyle bir çıktı ile isteğimizi yanıtlar :
+Localhost’unuzda  client.php dosyası ile sunucuya http isteği (http://localhost/lotus/client.php) gönderirsek sunucu bize şöyle bir çıktı ile isteğimizi yanıtlar :
 <br><code>
 Hello, symtkn
 </code><br>
 
 Bu örnek projeyi yaparken karşılaştığım birkaç hata var; bunlarla eğer sizde karşılaşırsanız aşağıdaki adımları izleyebilirsiniz.
-<b>Projeyi çalıştırma aşamasında karşılaşabileceğiniz hatalar  :<b>
+<b>Projeyi çalıştırma aşamasında karşılaşabileceğiniz hatalar  :</b>
 <br>
 1-) Cannot load php_soap.dll
 <b>Çözüm :</b>
-php.ini dosyasında    extension=php_soap.dll satırını başındaki noktalı virgülü kaldırın ve tüm servisleri restart yapın.  Ve “PHP extentions” kısmından php_soap’,  SOAP uzantısının (extention) etkinleştirilmiş olması gerekir.
+php.ini dosyasında extension=php_soap.dll satırını başındaki noktalı virgülü kaldırın ve tüm servisleri restart yapın.<br>
+Ve “PHP extentions” kısmından php_soap’, SOAP uzantısının (extention) etkinleştirilmiş olması gerekir.
 
 2-) Warning: require_once(lib/nusoap.php) [function.require-once]: failed to open stream: No such file or directory in C:\wamp\www\lotus\client.php on line 4
 
