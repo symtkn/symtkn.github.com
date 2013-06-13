@@ -36,7 +36,7 @@ SoapServer sınıfının yöntemleri :<br>
 
 SoapServer:: addFunction : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
 
-SoapServer:: __construct : SoapServer Sınıfı yapıcı yöntem.<br>
+SoapServer:: __construct : SoapServer Sınıfı'nın yapıcı yöntemi.<br>
 
 SoapServer:: getFunctions : Tanımlı yöntemlerin listesini döndürür.<br>
 
