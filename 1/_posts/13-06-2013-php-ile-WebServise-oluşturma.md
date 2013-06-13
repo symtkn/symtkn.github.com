@@ -35,18 +35,25 @@ PHP Soap kütüphanesinde SOAPServer, SOAPClient, SOAPFault, SOAPHeader, SOAPPar
 SoapServer sınıfının yöntemleri :<br>
 
 <b>SoapServer:: addFunction</b> : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
+
 <b>SoapServer:: __construct</b> : SoapServer Sınıfı kurucu yöntemi.<br>
+
 <b>SoapServer:: getFunctions</b> : Tanımlı yöntemlerin listesini döndürür.<br>
+
 <b>SoapServer:: handle</b> : Web Servisinin isteklere hazır halde bekletir.<br>
+
 <b>SoapServer:: setClass</b> : addFunction yönteminin benzeridir.<br>
 <br><br>
 SoapClient sınıfının yöntemleri :<br>
 
 <b>SoapClient::__call</b> : soap sunucusundan tanımlı bir metota çağrı yapar. aldığı iki değer vardır birincisi metot ismi ikincisi gönderikecek değerler.<br>
-<b>SoapClient::__getFunctions</b> : Kullanılabilir metotların listesini<br>
-<b>SoapClient::__getLastRequest</b> : Son isteklerin döndürür.<br>
-<b>SoapClient::__getLastResponse</b> : Son gönderilen cevaplar.<br>
 
+<b>SoapClient::__getFunctions</b> : Kullanılabilir metotların listesini<br>
+
+<b>SoapClient::__getLastRequest</b> : Son isteklerin döndürür.<br>
+
+<b>SoapClient::__getLastResponse</b> : Son gönderilen cevaplar.<br>
+<br>
 
 ###<a id="wsdl"> WSDL(Web Service Description Language – Web Servisleri Tanımlama Dili)</a>
 
@@ -145,6 +152,7 @@ $server->service($HTTP_RAW_POST_DATA);
 </textarea>
 <br>
 Burada <b>$server</b>  SOAP server işlevselliği için özel bir değişkendir.<br>
+
 <b>$server->register('myFunction');</b> satırı servis fonksiyonunu tanımlar.<br>
 
 Bu satırlarda da servis fonksiyonu implement edilir.<br>
@@ -157,8 +165,9 @@ SOAP girdileri doğrudan fonksiyon parametreleri olarak alır.<br>
 SOAP otomatik bir değer döner.<br>
 
 <b>$HTTP_RAW_POST_DATA</b> XML SOAP isteklerini içermelidir.<br>
-<b>$server->service</b> XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 
+<b>$server->service</b> XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
+<br>
 <u>SOAP client dosyası :</u>
 <br>
 <textarea rows="10" cols="80"> 
@@ -172,9 +181,11 @@ $result = $client->call('hello', array('name' => 'symtkn'));
 print_r($result);
 ?&gt
 </textarea>
-<br>
-<b>$client</b> SOAP client’ın işlevselliği yönünden özel bir değişkendir.<br>
-<b>$client = new nusoap_client('http://localhost/lotus/helloworld.php', false);</b><br>
+<br><br>
+
+<b>$client</b>SOAP client’ın işlevselliği yönünden özel bir değişkendir.<br>
+
+<b>$client = new nusoap_client('http://localhost/lotus/helloworld.php', false);</b>
 İlk parametre bir web servis endpoint URL dir.<br>
 İkinci parametre false, WSDL’e ihtiyaç olmadığını belirtir.<br>
 <b>$result = $client->call('hello', array('name' => 'symtkn'));</b><br>
@@ -187,7 +198,7 @@ Localhost’unuzda  client.php dosyası ile sunucuya http isteği (http://localh
 Hello, symtkn
 </code><br>
 
-Bu örnek projeyi yaparken karşılaştığım birkaç hata var; bunlarla eğer sizde karşılaşırsanız aşağıdaki adımları izleyebilirsiniz.
+Bu örnek projeyi yaparken karşılaştığım birkaç hata var; bunlarla eğer sizde karşılaşırsanız aşağıdaki adımları izleyebilirsiniz.<br>
 <b>Projeyi çalıştırma aşamasında karşılaşabileceğiniz hatalar  :</b>
 <br>
 1-) Cannot load php_soap.dll<br>
