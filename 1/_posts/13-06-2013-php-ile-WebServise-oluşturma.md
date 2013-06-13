@@ -63,7 +63,7 @@ SoapClient sınıfının yöntemleri :<br>
 tanımlamayı sağlar. 
 
 WSDL'in Temel Bileşenleri :
-<code>
+<textarea rows="16" cols="30"> 
 &ltdefinitions&gt
      &lttypes&gt
      Türlerin tanımlaması
@@ -78,7 +78,7 @@ WSDL'in Temel Bileşenleri :
      definition of a binding
      &lt/binding&gt 
 &lt/definitions&gt
-</code>
+</textarea>
 
  - Sunucu tarafında da istemci tarafında da aynı wsdl kullanılır. Çünkü wsdl’in temel amacı budur. Yani ortak bir yapı kurarak
 servisler arası iletişimi sağlamak.
