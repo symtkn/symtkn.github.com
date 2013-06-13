@@ -28,7 +28,7 @@ SOAP, XML-RPC. Burada üzerinde duracağım kısım SOAP standartıdır.
 <br><br>
 Bir web servisinin genel yapısı :
 <br>
-<img src="/images/php_webService/runtime.gif"></a>
+<img src="/images/php_webService/runtime.gif">
 <br>
   <b>SOAP Server</b>, gelen SOAP isteklerini karşılayıp önceden belirtilmiş olan fonksiyon ya da metodlara yönlendiren bir dosyadır.
 PHP Soap kütüphanesinde SOAPServer, SOAPClient, SOAPFault, SOAPHeader, SOAPParams, SOAPVar sınıfları bulunmaktadır. <br>
@@ -36,7 +36,7 @@ SoapServer sınıfının yöntemleri :<br>
 
 SoapServer:: addFunction : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
 
-SoapServer:: __construct : SoapServer Sınıfı kurucu yöntemi.<br>
+SoapServer:: __construct : SoapServer Sınıfı yapıcı yöntem.<br>
 
 SoapServer:: getFunctions : Tanımlı yöntemlerin listesini döndürür.<br>
 
