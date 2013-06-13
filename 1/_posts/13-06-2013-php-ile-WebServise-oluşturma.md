@@ -165,7 +165,9 @@ SOAP girdileri doğrudan fonksiyon parametreleri olarak alır.<br>
 SOAP otomatik bir değer döner.<br>
 
 <b>$HTTP_RAW_POST_DATA </b>XML SOAP isteklerini içermelidir.<br>
+
 <br><br>
+
 <b>$server->service </b>XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 <br>
 <u>SOAP client dosyası :</u>
