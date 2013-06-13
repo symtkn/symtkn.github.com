@@ -94,7 +94,7 @@ servisler arası iletişimi sağlamak.
   Yaygın olarak basit tipler kullanılır. NuSOAP kütüphanesi Complex  Types(kompleks tipler) ide destekler. Basit tipler xsd, kompleks türler için tns etiketi kullanılır.
 Ardışıl complex ya da basit/ilkel(primitive) tipler PHP de array veya struct lar kullanılarak oluşturulurlar. Şöyleki,
 <br>
-<code>
+<textarea rows="15" cols="75"> 
 $server->wsdl->addComplexType
         (
         'UyeGetirSonuc',  //Classın Adı
@@ -110,7 +110,7 @@ $server->wsdl->addComplexType
               'Uyeler'=> array('name' => 'Uyeler', 'type' => 'tns:UyeGetirSonuclar[]')
         )
 );  
-</code>
+</textarea>
 
 <br><br>
 ###<a id="sample"> Örnek Bir Uygulama</a>
