@@ -34,42 +34,19 @@ Bir web servisinin genel yapısı :
 PHP Soap kütüphanesinde SOAPServer, SOAPClient, SOAPFault, SOAPHeader, SOAPParams, SOAPVar sınıfları bulunmaktadır. <br>
 SoapServer sınıfının yöntemleri :<br>
 
-<u>SoapServer:: addFunction</u> : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.
-<u>SoapServer:: __construct</u> : SoapServer Sınıfı kurucu yöntemi.
-<u>SoapServer:: getFunctions</u> : Tanımlı yöntemlerin listesini döndürür.
-<u>SoapServer:: handle</u> : Web Servisinin isteklere hazır halde bekletir.
-<u>SoapServer:: setClass</u> : addFunction yönteminin benzeridir.
+<b>SoapServer:: addFunction</b> : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
+<b>SoapServer:: __construct</b> : SoapServer Sınıfı kurucu yöntemi.<br>
+<b>SoapServer:: getFunctions</b> : Tanımlı yöntemlerin listesini döndürür.<br>
+<b>SoapServer:: handle</b> : Web Servisinin isteklere hazır halde bekletir.<br>
+<b>SoapServer:: setClass</b> : addFunction yönteminin benzeridir.<br>
 <br><br>
 SoapClient sınıfının yöntemleri :<br>
 
-<u>SoapClient::__call</u> : soap sunucusundan tanımlı bir metota çağrı yapar. aldığı iki değer vardır birincisi metot ismi ikincisi gönderikecek değerler.
-<u>SoapClient::__getFunctions</u> : Kullanılabilir metotların listesini
-<u>SoapClient::__getLastRequest</u> : Son isteklerin döndürür.
-<u>SoapClient::__getLastResponse</u> : Son gönderilen cevaplar.
+<b>SoapClient::__call</b> : soap sunucusundan tanımlı bir metota çağrı yapar. aldığı iki değer vardır birincisi metot ismi ikincisi gönderikecek değerler.<br>
+<b>SoapClient::__getFunctions</b> : Kullanılabilir metotların listesini<br>
+<b>SoapClient::__getLastRequest</b> : Son isteklerin döndürür.<br>
+<b>SoapClient::__getLastResponse</b> : Son gönderilen cevaplar.<br>
 
-  
-
-###<a id="ioc_container"> Inversion of Control (IoC)</a>
-
-   Kontrolün tersine çevrilmesi manasına gelir.
-   IoC için güvenli bir container gerekir.(org.springframework.beans.factory.BeanFactory )
-   Spring IoC container sayesinde nesnelerin hayat döngüsü yönetimi, bağımlılıkların yönetimi, konfigürasyonu (bir bütün halinde çalışma),
-tasarım kalıplarının kullanımı sağlar.
-
-###<a id="di"> Dependency Injection (DI)</a>
- Bağımlılıkları ortadan kaldırmak şeklinde ifade edilebilir.
- Nesneler arası bağlar XML konfigürasyon dosyaları üzerinden otomatik gerçekleştirilir.
-Örneğin: ClassA sınıfı ClassB tipinde bir değişkene sahip olsun. Bu bağımlılık Spring tarafından ClassA dan nesne oluşturulurken göz önünde bulundurulur. Spring otomatik olarak ClassB sınıfından nesne oluşturarak ClassA sınıfından oluşturduğu nesneye enjekte eder.
-
- Bağımlılık tanımları kod bölümünden çıkarılarak IoC prensibini kullanan container’a sunulur.
- Uygulamayı tekrardan derlemeden değişiklikler ele alınabilir.
- Bileşenler çalışma anında elde edilerek, bileşenler arası ilişkiler dinamik bir yapı kazanır.
-
-###<a id="aop"> Aspect Oriented Programming (AOP)</a>
-  Kesim yönelimli programlama olarak türkçeye çevirebiliriz.
-<b>Amaç: </b>Uygulamalara modülerlik kazandırmak.
-
-Program çerçevesinde yer almak zorunda olmayan bazı metot (transaction, logging vb.) ve modülleri bir yerde toplayarak programdan bağımsız bir yerde implemente eder.
 
 ###<a id="wsdl"> WSDL(Web Service Description Language – Web Servisleri Tanımlama Dili)</a>
 
