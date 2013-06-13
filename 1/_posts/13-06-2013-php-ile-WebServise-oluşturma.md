@@ -121,7 +121,8 @@ NuSOAP yapısını kullanarak bir örnek üzerinde inceleme yaparsak;
 Bu projede kullanılan dizinler :
 - /lotus/client.php (SOAP istemci dosyası)
 - /lotus/helloworld.php (SOAP sunucu dosyası)
-- /lib/nusoap.php (NuSOAP kütüphanesi)
+- /lib/nusoap.php (NuSOAP kütüphanesi)<br>
+
 <b>***</b> Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de enpoint güncellemeniz gerekmektedir.<br>
 SOAP server dosyasının içeriği :
 <br>
