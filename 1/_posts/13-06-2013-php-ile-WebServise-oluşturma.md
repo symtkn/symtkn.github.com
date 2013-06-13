@@ -7,7 +7,7 @@ title: PHP İle Web Servisi Oluşturmak
 <li><a href="#web-service"> Web Servisi Nedir?</a></li><br>
 <li><a href="#soap"> SOAP(Simple Object Access Protocol – Basit Nesne Erişim Protokolü)</a></li><br>
 <li><a href="#wsdl"> WSDL(Web Service Description Language – Web Servisleri Tanımlama Dili)</a></li><br>
-<li><a href="#nusoap"> NuSOAP İşe Yarar?</a></li><br>
+<li><a href="#nusoap"> NuSOAP Ne İşe Yarar?</a></li><br>
 <li><a href="#sample"> Örnek Bir Uygulama</a></li><br>
 
 ###<a id="web-service"> Web Servisi Nedir? </a>
@@ -86,7 +86,7 @@ servisler arası iletişimi sağlamak.
  - Sunucu ise hangi servisi çalıştıracağını ve ne sonuç döndüreceğini wsdl yardımı ile bilir.
 
 
-###<a id="nusoap"> NuSOAP İşe Yarar?</a>
+###<a id="nusoap"> NuSOAP Ne İşe Yarar?</a>
 
   NuSOAP, PHP web servislerinde SOAP’ın hızlı bir şekilde geliştirilmesine olanak sağlayan class kütüphanesidir.  Basit object-oriented interface(nesne yönemli arayüz), service için WSDL dosyasını otomatik olarak yaratabilir ya a WSDL kullanmadan çalışabilir. PHP dosyaları içerisine (istemci ya da sunucu) import edilir . <br>
    <b>require_once(‘lib/nusoap.php’);</b><br>
