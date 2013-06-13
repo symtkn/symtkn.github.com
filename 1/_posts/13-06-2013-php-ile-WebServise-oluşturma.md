@@ -63,6 +63,7 @@ SoapClient sınıfının yöntemleri :<br>
 tanımlamayı sağlar. 
 
 WSDL'in Temel Bileşenleri :
+<br>
 <textarea rows="16" cols="30"> 
 &ltdefinitions&gt
      &lttypes&gt
@@ -79,7 +80,7 @@ WSDL'in Temel Bileşenleri :
      &lt/binding&gt 
 &lt/definitions&gt
 </textarea>
-
+<br>
  - Sunucu tarafında da istemci tarafında da aynı wsdl kullanılır. Çünkü wsdl’in temel amacı budur. Yani ortak bir yapı kurarak
 servisler arası iletişimi sağlamak.
  - İstemci wsdl dosyasına bakarak hangi metodu nasıl , ne parametreler ile çağıracağını ve ne sonuç döneceğini bilir.
@@ -159,6 +160,7 @@ SOAP otomatik bir değer döner.<br>
 <b>$server->service</b> XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 
 <u>SOAP client dosyası :</u>
+<br>
 <textarea rows="10" cols="80"> 
 &lt?php 
 require_once('/lib/nusoap.php');
@@ -170,7 +172,7 @@ $result = $client->call('hello', array('name' => 'symtkn'));
 print_r($result);
 ?&gt
 </textarea>
-
+<br>
 <b>$client</b> SOAP client’ın işlevselliği yönünden özel bir değişkendir.<br>
 <b>$client = new nusoap_client('http://localhost/lotus/helloworld.php', false);</b><br>
 İlk parametre bir web servis endpoint URL dir.<br>
