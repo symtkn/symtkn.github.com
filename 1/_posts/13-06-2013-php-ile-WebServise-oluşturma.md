@@ -34,25 +34,25 @@ Bir web servisinin genel yapısı :
 PHP Soap kütüphanesinde SOAPServer, SOAPClient, SOAPFault, SOAPHeader, SOAPParams, SOAPVar sınıfları bulunmaktadır. <br>
 SoapServer sınıfının yöntemleri :<br>
 
-<b>SoapServer:: addFunction</b> : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
+SoapServer:: addFunction : Yazdığımız yöntemleri servise ekler. SOAP_FUNCTIONS_ALL ile bütün metotları ekleyebiliyoruz.<br>
 
-<b>SoapServer:: __construct</b> : SoapServer Sınıfı kurucu yöntemi.<br>
+SoapServer:: __construct : SoapServer Sınıfı kurucu yöntemi.<br>
 
-<b>SoapServer:: getFunctions</b> : Tanımlı yöntemlerin listesini döndürür.<br>
+SoapServer:: getFunctions : Tanımlı yöntemlerin listesini döndürür.<br>
 
-<b>SoapServer:: handle</b> : Web Servisinin isteklere hazır halde bekletir.<br>
+SoapServer:: handle : Web Servisinin isteklere hazır halde bekletir.<br>
 
-<b>SoapServer:: setClass</b> : addFunction yönteminin benzeridir.<br>
+SoapServer:: setClass : addFunction yönteminin benzeridir.<br>
 <br><br>
 SoapClient sınıfının yöntemleri :<br>
 
-<b>SoapClient::__call</b> : soap sunucusundan tanımlı bir metota çağrı yapar. aldığı iki değer vardır birincisi metot ismi ikincisi gönderikecek değerler.<br>
+SoapClient::__call : soap sunucusundan tanımlı bir metota çağrı yapar. aldığı iki değer vardır birincisi metot ismi ikincisi gönderikecek değerler.<br>
 
-<b>SoapClient::__getFunctions</b> : Kullanılabilir metotların listesini<br>
+SoapClient::__getFunctions : Kullanılabilir metotların listesini<br>
 
-<b>SoapClient::__getLastRequest</b> : Son isteklerin döndürür.<br>
+SoapClient::__getLastRequest : Son isteklerin döndürür.<br>
 
-<b>SoapClient::__getLastResponse</b> : Son gönderilen cevaplar.<br>
+SoapClient::__getLastResponse : Son gönderilen cevaplar.<br>
 <br>
 
 ###<a id="wsdl"> WSDL(Web Service Description Language – Web Servisleri Tanımlama Dili)</a>
@@ -166,7 +166,7 @@ SOAP otomatik bir değer döner.<br>
 
 $HTTP_RAW_POST_DATA, XML SOAP isteklerini içermelidir.<br>
 
-$server->service satırı xXML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
+$server->service satırı XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 <br>
 <u>SOAP client dosyası :</u>
 <br>
