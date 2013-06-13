@@ -190,14 +190,14 @@ Hello, symtkn
 Bu örnek projeyi yaparken karşılaştığım birkaç hata var; bunlarla eğer sizde karşılaşırsanız aşağıdaki adımları izleyebilirsiniz.
 <b>Projeyi çalıştırma aşamasında karşılaşabileceğiniz hatalar  :</b>
 <br>
-1-) Cannot load php_soap.dll
+1-) Cannot load php_soap.dll<br>
 <b>Çözüm :</b>
 php.ini dosyasında extension=php_soap.dll satırını başındaki noktalı virgülü kaldırın ve tüm servisleri restart yapın.<br>
 Ve “PHP extentions” kısmından php_soap’, SOAP uzantısının (extention) etkinleştirilmiş olması gerekir.
 
 2-) Warning: require_once(lib/nusoap.php) [function.require-once]: failed to open stream: No such file or directory in C:\wamp\www\lotus\client.php on line 4
 
-Fatal error: require_once() [function.require]: Failed opening required 'lib/nusoap.php' (include_path='C:\wamp\www\lotus \include/..;.;C:\php5\pear') in C:\wamp\www\lotus\client.php on line 4
+Fatal error: require_once() [function.require]: Failed opening required 'lib/nusoap.php' (include_path='C:\wamp\www\lotus \include/..;.;C:\php5\pear') in C:\wamp\www\lotus\client.php on line 4<br>
 
 <b>Çözüm :</b>
 Php.ini dosyasında   include_path = ".;c:\wamp\www\" satırının başındaki noktalı virgülü kaldırarak restart yapın. Eğer eşitliğin sağ tarafı istenilen dizin yapısına uymuyorsa düzenleme yapabilirsiniz. Benim include edeceğim dosyalar www dizininin altında yer aldığı için bu yolu(path) yazdım.
