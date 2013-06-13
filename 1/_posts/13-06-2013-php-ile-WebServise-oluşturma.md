@@ -164,11 +164,11 @@ function hello($parameters) {
 SOAP girdileri doğrudan fonksiyon parametreleri olarak alır.<br>
 SOAP otomatik bir değer döner.<br>
 
-<b>$HTTP_RAW_POST_DATA </b>XML SOAP isteklerini içermelidir.<br>
+$HTTP_RAW_POST_DATA, XML SOAP isteklerini içermelidir.<br>
 
 <br><br>
 
-<b>$server->service </b>XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
+$server->service satırı XML analizi yapar. Fonksiyon çağrıları yapar ve XML istekleri yaratır.<br>
 <br>
 <u>SOAP client dosyası :</u>
 <br>
