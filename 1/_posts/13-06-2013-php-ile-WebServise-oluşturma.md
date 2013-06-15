@@ -131,7 +131,8 @@ Bu projede kullanılan dizinler :
 - /lotus/helloworld.php (SOAP sunucu dosyası)
 - /lib/nusoap.php (NuSOAP kütüphanesi)<br>
 
-***Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de enpoint güncellemeniz gerekmektedir.<br>
+***Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de endpoint güncellemeniz gerekmektedir.<br>
+
 SOAP server dosyasının içeriği :
 <br>
 <textarea rows="15" cols="60"> 
