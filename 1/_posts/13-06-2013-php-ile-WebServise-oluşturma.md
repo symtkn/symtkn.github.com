@@ -102,7 +102,7 @@ servisler arası iletişimi sağlamak.
   Yaygın olarak basit tipler kullanılır. NuSOAP kütüphanesi Complex  Types(kompleks tipler) ide destekler. Basit tipler xsd, kompleks türler için tns etiketi kullanılır.
 Ardışıl complex ya da basit/ilkel(primitive) tipler PHP de array veya struct lar kullanılarak oluşturulurlar. Şöyleki,
 <br>
-<textarea rows="15" cols="95"> 
+<textarea rows="15" cols="92"> 
 $server->wsdl->addComplexType
         (
         'UyeGetirSonuc',  //Classın Adı
@@ -131,7 +131,7 @@ Bu projede kullanılan dizinler :
 - /lotus/helloworld.php (SOAP sunucu dosyası)
 - /lib/nusoap.php (NuSOAP kütüphanesi)<br>
 
-<b>***</b> Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de enpoint güncellemeniz gerekmektedir.<br>
+***Kullanılan dizin yapısını kendi projenize göre değiştirebilirsiniz. Eğer bir değişiklik söz konusu ise burada dikkat etmeniz gereken SOAP istemci dosyasının dizin yapısını, SOAP server dosyası içerisinde de enpoint güncellemeniz gerekmektedir.<br>
 SOAP server dosyasının içeriği :
 <br>
 <textarea rows="15" cols="60"> 
@@ -170,7 +170,7 @@ $server->service satırı XML analizi yapar. Fonksiyon çağrıları yapar ve XM
 <br>
 <u>SOAP client dosyası :</u>
 <br>
-<textarea rows="10" cols="95"> 
+<textarea rows="10" cols="92"> 
 &lt?php 
 require_once('/lib/nusoap.php');
 // client örneği yaratılır
